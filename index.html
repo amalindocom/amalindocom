@@ -99,11 +99,11 @@
 
 <body>
     <!-- Header -->
-<header role="banner" id="fh5co-header" dir="rtl" style="background: #fff !important;">
+<header role="banner" id="fh5co-header" dir="rtl">
   <div class="fluid-container">
-    <nav class="navbar navbar-default navbar-rtl" role="navigation" style="background: #fff !important;">
+    <nav class="navbar navbar-default navbar-rtl" role="navigation">
       
-      <!-- Mobile Toggle Menu Button (LEFT side in RTL) -->
+      <!-- Mobile Toggle Menu Button -->
       <button type="button" class="js-fh5co-nav-toggle fh5co-nav-toggle nav-toggle-btn" 
          data-toggle="collapse" data-target="#navbar" 
          aria-expanded="false" aria-controls="navbar"
@@ -111,27 +111,31 @@
         <i></i>
       </button>
       
-      <!-- Logo & Name (RIGHT side in RTL) -->
-      <div class="navbar-header navbar-header-rtl">
-        <div id="logo">
-          <img src="images/mainIcon.png" alt="شعار شركة أمالندو لانقق" class="logo logo-img" loading="eager">
-          <h3 class="logo-title">
-            <a href="index.html">شركة أمالندو لانقق</a>
-          </h3>
-        </div>
+      <!-- Logo & Name - Horizontal Layout -->
+      <div class="navbar-brand-wrapper">
+        <a href="index.html" class="navbar-brand-link">
+          <img src="images/mainIcon.png" alt="أمالندو" class="brand-logo" loading="eager">
+          <span class="brand-name">أمالندو لانقق</span>
+        </a>
       </div>
       
-      <!-- Navigation Menu (LEFT side in RTL) -->
+      <!-- Navigation Menu -->
       <div id="navbar" class="navbar-collapse collapse navbar-container">
         <ul class="nav navbar-nav nav-menu-rtl">
-          <!-- Order: الرئيسية (Home) first on right, then others to left -->
-          <li class="active"><a href="#" data-nav-section="home">الرئيسية</a></li>
-          <li><a href="#" data-nav-section="services">خدماتنا</a></li>
-          <li><a href="#" data-nav-section="explore">من نحن</a></li>
-          <li><a href="#" data-nav-section="gallery">معرض الصور</a></li>
-          <li><a href="#" data-nav-section="partners">شركاؤنا</a></li>
-          <li><a href="#" data-nav-section="contact">تواصل</a></li>
+          <li class="active"><a href="#" data-nav-section="home"><span>الرئيسية</span></a></li>
+          <li><a href="#" data-nav-section="services"><span>خدماتنا</span></a></li>
+          <li><a href="#" data-nav-section="explore"><span>من نحن</span></a></li>
+          <li><a href="#" data-nav-section="gallery"><span>الصور</span></a></li>
+          <li><a href="#" data-nav-section="partners"><span>شركاؤنا</span></a></li>
+          <li><a href="#" data-nav-section="pendaftaran"><span>التسجيل</span></a></li>
+          <li><a href="#" data-nav-section="contact"><span>تواصل</span></a></li>
         </ul>
+        
+        <!-- WhatsApp CTA Button -->
+        <a href="https://wa.me/62818962223" class="navbar-cta" target="_blank" rel="noopener noreferrer">
+          <i class="icon-bubbles"></i>
+          <span>واتساب</span>
+        </a>
       </div>
     </nav>
   </div>
@@ -416,6 +420,61 @@
                 <!-- DataTables will handle the data -->
             </tbody>
         </table>
+        </div>
+    </section>
+
+    <!-- Indonesian Registration Section -->
+    <section id="pendaftaran" data-section="pendaftaran" class="indonesian-registration-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="registration-card">
+                        <div class="indonesia-flag-accent"></div>
+                        
+                        <!-- Important Notice - Indonesian Workers Only -->
+                        <div class="indonesian-only-notice">
+                            <div class="notice-flag">🇮🇩</div>
+                            <p class="notice-id"><strong>KHUSUS TENAGA KERJA INDONESIA</strong></p>
+                            <p class="notice-ar"><strong>للعمالة الإندونيسية فقط</strong></p>
+                        </div>
+                        
+                        <h2 class="registration-title">Pendaftaran / التسجيل</h2>
+                        <p class="registration-subtitle">Pendaftaran dilakukan dengan datang ke kantor atau menghubungi</p>
+                        <p class="registration-subtitle-ar">يتم التسجيل بالحضور للمكتب أو الاتصال</p>
+                        
+                        <div class="contact-cards-wrapper">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="icon-phone"></i>
+                                </div>
+                                <h3>Kantor Utama</h3>
+                                <h4>المكتب الرئيسي</h4>
+                                <a href="tel:+6287885351491" class="phone-number">+62 878-8535-1491</a>
+                                <a href="https://wa.me/6287885351491" class="whatsapp-btn">
+                                    <i class="icon-bubbles"></i> WhatsApp
+                                </a>
+                            </div>
+                            
+                            <div class="contact-card visa-card">
+                                <div class="contact-icon">
+                                    <i class="icon-docs"></i>
+                                </div>
+                                <h3>Departemen Visa</h3>
+                                <h4>قسم التأشيرات</h4>
+                                <a href="tel:+6281802888543" class="phone-number">+62 818-0288-8543</a>
+                                <a href="https://wa.me/6281802888543" class="whatsapp-btn">
+                                    <i class="icon-bubbles"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="office-visit-info">
+                            <i class="icon-location-pin"></i>
+                            <p>Jl. Kamboja 33 Halim Perdana Kusuma Jakarta Timur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
