@@ -1,4 +1,8 @@
-#Force non-www:
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.amalindolanggeng\.com [NC]
-RewriteRule ^(.*)$ http://amalindolanggeng.com/$1 [L,R=301]
+# GitHub Pages ignores .htaccess; applies only on Apache. Enforce HTTPS in Pages settings.
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://amalindolanggeng.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^(www\.)?amalindolanggeng\.net$ [NC]
+RewriteRule ^(.*)$ https://amalindolanggeng.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.amalindolanggeng\.com$ [NC]
+RewriteRule ^(.*)$ https://amalindolanggeng.com/$1 [L,R=301]
